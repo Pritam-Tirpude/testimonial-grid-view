@@ -1,0 +1,57 @@
+$primary_moderate_violet: hsl(263, 55%, 52%);
+$primary_very_dark_grayish_blue: hsl(217, 19%, 35%);
+$primary_very_dark_blackish_blue: hsl(219, 29%, 14%);
+$primary_white: hsl(0, 0%, 100%);
+$neutral_light_gray: hsl(0, 0%, 81%);
+$neutral_light_grayish_blue: hsl(210, 46%, 95%);
+
+$header1: 3.5rem;
+$header2: 2.5rem;
+$header3: 2rem;
+$header4: 1.5rem;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "grid-cards";
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: block;
+    padding: 1rem 1rem 1rem 1rem;
+
+    .quotation-mark {
+      left: 24rem;
+      position: absolute;
+    }
+
+    .jonathan-card {
+      margin-top: 2rem;
+
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .jeanette-card {
+      margin-top: 2rem;
+    }
+
+    .patrick-card {
+      margin-top: 2rem;
+    }
+
+    .kira-card {
+      margin-top: 2rem;
+
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

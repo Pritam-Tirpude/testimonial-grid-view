@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: #ecf2f8;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 10rem 10rem 10rem 10rem;
+  margin: 2rem 0rem;
+  grid-gap: 3rem;
+}
+
+.daniel-card {
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  background: #7541c8;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  background-image: url("/img/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.daniel-card .daniel-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flext-start;
+      -ms-flex-pack: flext-start;
+          justify-content: flext-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.daniel-card .daniel-avatar .daniel-title {
+  padding: 1.5rem;
+}
+
+.daniel-card .daniel-avatar img {
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.daniel-card .daniel-avatar h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.daniel-card .daniel-avatar h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  opacity: 50%;
+}
+
+.daniel-card .daniel-testimonial {
+  margin-top: 1rem;
+}
+
+.daniel-card .daniel-testimonial h1 {
+  color: white;
+}
+
+.daniel-card .daniel-testimonial p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: white;
+  line-height: 2.5rem;
+  opacity: 70%;
+  font-size: medium;
+}
+
+.jonathan-card {
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  background: #48556a;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.jonathan-card .jonathan-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flext-start;
+      -ms-flex-pack: flext-start;
+          justify-content: flext-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.jonathan-card .jonathan-avatar .jonathan-title {
+  padding: 1.5rem;
+}
+
+.jonathan-card .jonathan-avatar img {
+  border-radius: 50%;
+}
+
+.jonathan-card .jonathan-avatar h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.jonathan-card .jonathan-avatar h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  opacity: 50%;
+}
+
+.jonathan-card .jonathan-testimonial {
+  margin-top: 1rem;
+}
+
+.jonathan-card .jonathan-testimonial h1 {
+  color: white;
+}
+
+.jonathan-card .jonathan-testimonial p {
+  margin-top: 2rem;
+  color: white;
+  line-height: 2.5rem;
+  opacity: 70%;
+  font-size: medium;
+}
+
+.jeanette-card {
+  padding: 1rem 2rem;
+  width: 100%;
+  min-height: 40vh;
+  border-radius: 1.5rem;
+  background: white;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.jeanette-card .jeanette-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flext-start;
+      -ms-flex-pack: flext-start;
+          justify-content: flext-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.jeanette-card .jeanette-avatar .jeanette-title {
+  padding: 1.5rem;
+}
+
+.jeanette-card .jeanette-avatar img {
+  border-radius: 50%;
+}
+
+.jeanette-card .jeanette-avatar h3 {
+  font-size: 1.5rem;
+  color: #48556a;
+}
+
+.jeanette-card .jeanette-avatar h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #48556a;
+  opacity: 50%;
+}
+
+.jeanette-card .jeanette-testimonial {
+  margin-top: 1rem;
+}
+
+.jeanette-card .jeanette-testimonial h1 {
+  color: #48556a;
+}
+
+.jeanette-card .jeanette-testimonial p {
+  margin-top: 2rem;
+  color: #48556a;
+  line-height: 2.5rem;
+  opacity: 70%;
+  font-size: medium;
+}
+
+.patrick-card {
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: #19212e;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+}
+
+.patrick-card .patrick-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flext-start;
+      -ms-flex-pack: flext-start;
+          justify-content: flext-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.patrick-card .patrick-avatar .patrick-title {
+  padding: 1.5rem;
+}
+
+.patrick-card .patrick-avatar img {
+  border-radius: 50%;
+  border: 3px solid rgba(117, 65, 200, 0.5);
+}
+
+.patrick-card .patrick-avatar h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.patrick-card .patrick-avatar h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  opacity: 50%;
+}
+
+.patrick-card .patrick-testimonial {
+  margin-top: 1rem;
+}
+
+.patrick-card .patrick-testimonial h1 {
+  color: white;
+}
+
+.patrick-card .patrick-testimonial p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: white;
+  line-height: 2.5rem;
+  opacity: 70%;
+  font-size: medium;
+}
+
+.kira-card {
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: white;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / span 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.kira-card .kira-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flext-start;
+      -ms-flex-pack: flext-start;
+          justify-content: flext-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.kira-card .kira-avatar .kira-title {
+  padding: 1.5rem;
+}
+
+.kira-card .kira-avatar img {
+  border-radius: 50%;
+}
+
+.kira-card .kira-avatar h3 {
+  font-size: 1.5rem;
+  color: #48556a;
+}
+
+.kira-card .kira-avatar h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #48556a;
+  opacity: 50%;
+}
+
+.kira-card .kira-testimonial {
+  margin-top: 1rem;
+}
+
+.kira-card .kira-testimonial h1 {
+  color: #48556a;
+}
+
+.kira-card .kira-testimonial p {
+  margin-top: 2rem;
+  color: #48556a;
+  line-height: 2.5rem;
+  opacity: 70%;
+  font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: block;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .grid-container .quotation-mark {
+    left: 24rem;
+    position: absolute;
+  }
+  .grid-container .jonathan-card {
+    margin-top: 2rem;
+  }
+  .grid-container .jonathan-card p {
+    margin-bottom: 2rem;
+  }
+  .grid-container .jeanette-card {
+    margin-top: 2rem;
+  }
+  .grid-container .patrick-card {
+    margin-top: 2rem;
+  }
+  .grid-container .kira-card {
+    margin-top: 2rem;
+  }
+  .grid-container .kira-card p {
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
