@@ -14,3 +14,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
+
+### Screenshot
+
+![](./Screenshot.png)
